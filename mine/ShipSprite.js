@@ -27,8 +27,7 @@ class ShipSprite extends Sprite {
     }
 
     shoot(missil_animations, speed=1) {
-        let shooted=new Missil(missil_animations, this.x, this.y+10, speed);
-        setInterval(shooted.show, 1000);
+        let shooted=new Missil(missil_animations, this.x+(this.w/5), this.y-this.w, speed);
         return shooted
     }
 
